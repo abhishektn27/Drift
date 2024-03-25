@@ -69,10 +69,10 @@ p{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #563434;
+    background: #E1FAC2;
 }
 .header{
-    background: radial-gradient(#E1FAC2,#72FA78);
+    background: radial-gradient(#E1FAC2,#ffd6d6);
 }
 .header .row{
     margin-top: 70px;
@@ -137,7 +137,7 @@ h4{
 }
 /* Offer */
 .offer{
-    background: radial-gradient(#F8FAF8,#72FA78);
+    background: radial-gradient(#fff, #ffd6d6);
     margin-top: 80px;
     padding: 30px 0;
 }

@@ -1,0 +1,27 @@
+{% load static %}
+<div class="row">
+                <div class="col-2">
+                    <h1>Give Your Bike <br> A New Wings!</h1>
+                    <p>Success isn't always about greatness. It;s about consistency. Consistent <br> hard work gains
+                        success. Greatness will come.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="{% static 'images/r15_5.png' %}">
+                </div>
+            </div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>

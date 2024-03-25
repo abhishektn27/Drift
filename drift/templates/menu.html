@@ -1,0 +1,17 @@
+{% load static %}
+<div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="{% static 'images/logo_4.png' %}" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'product_display' %}">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="{% url 'accounts' %}">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="{% url 'cart_page' %}"><img src="{% static 'images/cart.png' %}" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>

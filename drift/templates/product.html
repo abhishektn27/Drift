@@ -1,17 +1,15 @@
 {% extends 'base.html' %}
-{% load static %}
-
 
 {% block content %}
 
 <div class="small-container">
-        <h2 class="title">CATEGORIES</h2>
+        <h2 class="title">Products</h2>
         <div class="row">
-            {% for categories in category %}
+            {% for product in products %}
             <div class="col-4",style="padding-right: 20px;">
 
-                <a href="{% url 'product_display' %}"><img src="{{ categories.image.url }}"></a>
-                <h4>{{ categories.name }}</h4>
+                <a href="{{ product_display.url }}"><img src="{{ product.image.url }}"></a>
+                <h4>{{ product.title }}</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -25,5 +23,4 @@
             {% endfor %}
         </div>
 </div>
-{% include 'second_banner.html' %}
-{% endblock content %}
+{% endblock %}
