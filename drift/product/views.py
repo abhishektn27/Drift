@@ -7,8 +7,7 @@ from django.shortcuts import get_object_or_404
 def index(request):
     return render(request,'home.html' )
 
-def product_list(request):
-    return render(request,'product.html')
+
 def category_wise(request):
     category = Category.objects.all()
     return render(request,'home.html',{'category':category})
@@ -17,8 +16,12 @@ def category_wise(request):
 #
 
 
-def product_display(request,):
-
+def product_display(request):
     products = Products.objects.all()
-
     return render(request,'product.html',{'products':products})
+
+
+def product_desc(request,id):
+    product = Products.objects.get(id=id)
+    context={'product':product}
+    return render(request,'product_description.html',context)

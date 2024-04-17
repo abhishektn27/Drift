@@ -18,8 +18,11 @@
     <div class="header">
         <div class="container">
             {% include 'menu.html' %}
+            {% block banner %}
 
-            {% include 'banner.html' %}
+            {% endblock banner %}
+
+
 
         </div>
     </div>
@@ -90,6 +93,9 @@
             }
         }
     </script>
+{% block extra_scripts %}
+
+{% endblock %}
 
 </body>
 

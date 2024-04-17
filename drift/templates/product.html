@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block banner %}
+ {% include 'banner.html' %}
+{% endblock banner %}
 
 {% block content %}
 
@@ -8,8 +11,9 @@
             {% for product in products %}
             <div class="col-4",style="padding-right: 20px;">
 
-                <a href="{{ product_display.url }}"><img src="{{ product.image.url }}"></a>
+                <a href="{% url 'product_description' product.id %}"><img src="{{ product.image.url }}"></a>
                 <h4>{{ product.title }}</h4>
+
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
