@@ -72,7 +72,7 @@ p{
     background: #563434;
 }
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#DBFAC2,#ffd6d6);
 }
 .header .row{
     margin-top: 70px;
@@ -137,7 +137,7 @@ h4{
 }
 /* Offer */
 .offer{
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#c0f6cd, #C2FAF3);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -386,7 +386,7 @@ th:last-child{
     background: radial-gradient(#fff, #ffd6d6);
 }
 .form-container{
-    background: #fff;
+    background: #F6FDFC;
     width: 300px;
     height: 400px;
     position: relative;

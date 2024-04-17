@@ -12,16 +12,17 @@
             <div class="col-4",style="padding-right: 20px;">
 
                 <a href="{% url 'product_description' product.id %}"><img src="{{ product.image.url }}"></a>
-                <h4>{{ product.title }}</h4>
+                <center><h4>{{ product.title }}</h4></center>
 
-                <div class="rating">
+                <div class="rating"><center>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
+                    </center>
                 </div>
-                <p>$50.00</p>
+                <center><p>$50.00</p></center>
 
             </div>
             {% endfor %}
